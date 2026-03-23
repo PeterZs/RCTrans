@@ -1,1 +1,14 @@
-TODO
+flow_vis==0.1
+imageio==2.22.4
+kaolin==0.15.0
+matplotlib==3.7.5
+numpy==1.24.4
+opencv_python==4.10.0.84
+pyhocon==0.3.57
+PyMCubes==0.1.2
+PyYAML==6.0
+scipy==1.9.3
+torch==2.0.1
+torchvision==0.15.2
+tqdm==4.66.4
+trimesh==4.0.0
