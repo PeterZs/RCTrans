@@ -53,7 +53,11 @@ After preparing the data, you can run python script step by step as follows:
 
 3. Then we use pre-trained RCNet to estimate correspondence for each view
    ```shell
+    # For synthetic data
    python predict_correspondence.py --case CASE_NAME
+
+   # For real data
+    python render_backgroudn.py --case CASE_NAME --x_fov 90
    ```
    As mentioned above, we still working on organizing this part and the file is empty now. For now, you can put our results into the exp/case_name/pred_correspondence and run the following code. (Note, use our predicted results from [Google Drive](https://drive.google.com/drive/folders/15g7lB6r1XMR8gNZi_8rZKjg2vkZpAdKy?usp=drive_link) rather than the ground-truth in data. And the result file is a little large, approximately 300 M for each case. )
 
