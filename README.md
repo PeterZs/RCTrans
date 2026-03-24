@@ -12,7 +12,7 @@ We will release all the codes to facilitate the community. For now, we have orga
 - [x] release network training and testing code
 - [x] release calling RCNet interface in reconstruction code
 - [ ] release dataset creation code
-- [ ] release real data process code and guidance
+- [x] release real data process code and guidance
 - [x] release reconstruction data
 - [x] release RCNet training and validation dataset
 
@@ -36,7 +36,7 @@ and then follow the instructions provided in [./TransRecon/README.md](./TransRec
 
 ## RCNet Training & Testing
 All code related to RCNet is placed in the **RCEstimate** directory.
-It includes includes a complete dataset description and all code.
+It includes the dataset description and all code.
 
 Please first switch to this directory 
 ``` shell
@@ -45,6 +45,8 @@ cd RCEstimate
 and then follow the instructions provided in [./RCEstimate/README.md](./TransRecon/README.md) to run the code.
 
 ## Real Data Processing
+We provide the guidance of processing real data in the **RealDataProcess** directory. 
+It includes our code and the illustration of processing [./RealDataProcess/README.md](./RealDataProcess/README.md).
 
 ## Citation
 ```
