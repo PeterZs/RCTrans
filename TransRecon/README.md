@@ -59,7 +59,7 @@ After preparing the data, you can run python script step by step as follows:
    # For real data
     python render_backgroudn.py --case CASE_NAME --x_fov 90
    ```
-   As mentioned above, we still working on organizing this part and the file is empty now. For now, you can put our results into the exp/case_name/pred_correspondence and run the following code. (Note, use our predicted results from [Google Drive](https://drive.google.com/drive/folders/15g7lB6r1XMR8gNZi_8rZKjg2vkZpAdKy?usp=drive_link) rather than the ground-truth in data. And the result file is a little large, approximately 300 M for each case. )
+   It would call the pre-trained RCNet to predict correspondence and filter the results based on RGB error. And it would transfer the 2D correspondence into 3D directions for convience. (Our predicted results can be found in [Google Drive](https://drive.google.com/drive/folders/15g7lB6r1XMR8gNZi_8rZKjg2vkZpAdKy?usp=drive_link). The result file is a little large, approximately 300 M for each case. )
 
 
 
