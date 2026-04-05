@@ -11,7 +11,7 @@ We will release all the codes to facilitate the community. For now, we have orga
 - [x] release reconstruction code
 - [x] release network training and testing code
 - [x] release calling RCNet interface in reconstruction code
-- [ ] release dataset creation code
+- [x] release dataset creation code
 - [x] release real data process code and guidance
 - [x] release reconstruction data
 - [x] release RCNet training and validation dataset
@@ -24,6 +24,18 @@ We will release all the codes to facilitate the community. For now, we have orga
     cd RCTrans
     pip install -r requirements.txt
     ```
+
+## Dataset and Dataset Creation
+
+We now release both the rendered dataset and the dataset creation code used for the synthetic correspondence data in this project.
+
+- Rendered dataset: https://huggingface.co/datasets/arkgao/NaturalRefractiveCorrespondence
+- Dataset creation repository: https://github.com/arkgao/RCDatasetCreation
+
+If you only want to train or evaluate RCNet, download the dataset from Hugging Face and follow the instructions in [./RCEstimate/README.md](./RCEstimate/README.md).
+
+If you want to reproduce the synthetic data generation pipeline, use the dedicated dataset creation repository. It contains the rendering code, resource preparation scripts, and guidance for preparing shape and environment-map assets before launching the batch renderer.
+
 ## Object Reconstruction
 All code related to object reconstruction is placed in the **TransRecon** directory.
 It would leverage the pretrained RCNet to reconstruct transparent objects from multi-view images.
